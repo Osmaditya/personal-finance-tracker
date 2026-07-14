@@ -1,91 +1,179 @@
-# Finance Tracker
+# 💰 Finance Tracker
 
-A full-stack personal finance tracking application built to help you manage your expenses, track your income, and visualize your financial health.
+A modern full-stack **Personal Finance Tracker** that helps users monitor income and expenses, manage budgets, categorize transactions, and gain meaningful insights into their financial activity through interactive dashboards and reports.
 
-## 🚀 Tech Stack
+---
 
-### Frontend
-- **Framework:** React 19 with TypeScript, built with Vite
-- **UI & Styling:** Material UI (MUI), Emotion
+# 🚀 Tech Stack
+
+## Frontend
+- **Framework:** React 19 + TypeScript (Vite)
+- **UI Library:** Material UI (MUI) & Emotion
 - **State Management:** Redux Toolkit
 - **Routing:** React Router DOM
-- **Forms & Validation:** React Hook Form, Zod
+- **Form Handling & Validation:** React Hook Form + Zod
 - **Data Visualization:** Recharts
 - **HTTP Client:** Axios
-- **Date Utility:** date-fns
+- **Date Utilities:** date-fns
 
-### Backend
+## Backend
 - **Framework:** Django & Django REST Framework (DRF)
-- **Database:** PostgreSQL (supports SQLite out of the box for development)
-- **Authentication:** JWT (JSON Web Tokens) via `djangorestframework-simplejwt`
-- **Utilities:** OpenPyXL (Excel integration), ReportLab (PDF generation), Django Filter, CORS Headers
+- **Database:** PostgreSQL (SQLite supported for local development)
+- **Authentication:** JWT (JSON Web Tokens) using `djangorestframework-simplejwt`
+- **Additional Libraries:**
+  - Django Filter
+  - CORS Headers
+  - OpenPyXL (Excel Export)
+  - ReportLab (PDF Report Generation)
 
-## 📂 Project Structure
+---
 
-- `/frontend`: Contains the React & Vite single-page application.
-- `/finance-tracker-backend`: Contains the Django REST API backend.
+# 📁 Project Structure
 
-## ⚙️ Prerequisites
+```
+Finance-Tracker/
+│
+├── finance-tracker-backend/   # Django REST API
+├── frontend/                  # React + Vite Application
+└── README.md
+```
 
-Make sure you have the following installed on your machine:
-- [Node.js](https://nodejs.org/) (v18+ recommended)
-- [Python](https://www.python.org/) (v3.10+ recommended)
-- PostgreSQL (optional, if using Postgres instead of the default SQLite)
+---
 
-## 🛠️ Getting Started
+# ✨ Features
 
-Follow these instructions to set up the project locally.
+- 🔐 Secure JWT Authentication
+- 👤 User Registration & Login
+- 💵 Income & Expense Tracking
+- 📂 Transaction Categories
+- 🎯 Budget Management
+- 📊 Interactive Dashboard & Reports
+- 📈 Financial Analytics
+- 📄 PDF Report Generation
+- 📥 Excel Export
+- 📱 Responsive User Interface
 
-### 1. Backend Setup
+---
 
-1. Navigate to the backend directory:
-   ```bash
-   cd finance-tracker-backend
-   ```
-2. Create and activate a virtual environment:
-   ```bash
-   python -m venv .venv
-   # On Windows:
-   .venv\Scripts\activate
-   # On macOS/Linux:
-   source .venv/bin/activate
-   ```
-3. Install the dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Configure environment variables:
-   - Copy the `.env.example` file and rename it to `.env`.
-   - Update the variables as needed.
-5. Apply database migrations:
-   ```bash
-   python manage.py migrate
-   ```
-6. Start the development server:
-   ```bash
-   python manage.py runserver
-   ```
-   The backend API will run on `http://localhost:8000/`.
+# ⚙️ Prerequisites
 
-### 2. Frontend Setup
+Before running the project, make sure you have installed:
 
-1. Open a new terminal and navigate to the frontend directory:
-   ```bash
-   cd frontend
-   ```
-2. Install the dependencies:
-   ```bash
-   npm install
-   ```
-3. Configure environment variables:
-   - Copy `.env.example` to `.env`.
-   - Ensure the `VITE_API_BASE_URL` (or equivalent) points to your local backend API.
-4. Start the frontend development server:
-   ```bash
-   npm run dev
-   ```
-   The frontend will run on `http://localhost:3000/`.
+- Node.js (v18 or above)
+- Python (v3.10 or above)
+- PostgreSQL (Optional if using PostgreSQL instead of SQLite)
 
-## 🤝 Contributing
+---
 
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+# 🛠️ Installation & Setup
+
+## 1️⃣ Backend Setup
+
+Navigate to the backend folder:
+
+```bash
+cd finance-tracker-backend
+```
+
+Create a virtual environment:
+
+```bash
+python -m venv .venv
+```
+
+Activate the virtual environment
+
+### Windows
+
+```bash
+.venv\Scripts\activate
+```
+
+### macOS/Linux
+
+```bash
+source .venv/bin/activate
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Configure environment variables
+
+- Create a `.env` file.
+- Add the required environment variables.
+
+Apply migrations
+
+```bash
+python manage.py migrate
+```
+
+Start the Django development server
+
+```bash
+python manage.py runserver
+```
+
+Backend will be available at
+
+```
+http://localhost:8000/
+```
+
+---
+
+## 2️⃣ Frontend Setup
+
+Open another terminal
+
+```bash
+cd frontend
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Create a `.env` file and configure the backend API URL
+
+Example
+
+```env
+VITE_API_BASE_URL=http://localhost:8000/api
+```
+
+Run the frontend
+
+```bash
+npm run dev
+```
+
+Frontend will be available at
+
+```
+http://localhost:5173/
+```
+
+---
+
+# 🤝 Contributing
+
+Contributions, suggestions, and feature requests are always welcome.
+
+If you'd like to contribute:
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Open a Pull Request
+
+---
+
+
+## ⭐ If you found this project helpful, consider giving it a star on GitHub!
