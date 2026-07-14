@@ -37,9 +37,60 @@ Finance-Tracker/
 ├── frontend/                  # React + Vite Application
 └── README.md
 ```
+---
+# 📸 Application Screenshots
+
+## 🔐 Login
+
+![Login](screenshots/login.png)
 
 ---
 
+## 📊 Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+---
+
+## 💳 Transactions
+
+![Transactions](screenshots/transactions.png)
+
+---
+
+## 💰 Budgets
+
+![Budgets](screenshots/budgets.png)
+
+---
+
+## 📂 Categories
+
+![Categories](screenshots/categories.png)
+
+---
+
+## 📈 Reports
+
+![Reports](screenshots/reports.png)
+
+---
+
+## 👤 Profile
+
+![Profile](screenshots/profile.png)
+
+---
+
+# 📄 Sample Generated Financial Report
+
+The application supports exporting financial reports in PDF,CSV and XLS format.
+
+**Sample Report**
+
+📄 [Download Financial_Report.pdf](sample-reports/Financial_Report.pdf)
+
+---
 # ✨ Features
 
 - 🔐 Secure JWT Authentication
